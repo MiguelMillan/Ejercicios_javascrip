@@ -9,20 +9,27 @@ const dia = [31,28,31,30,31,30,31,31,30,31,30,31];
 const mes = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto",
 "septiembre","octubre","noviembre","diciembre"];
 
+let validar=true;
+let year;
 
-function Calendario (dia,mes,año){
-    this.dia=Numero(prompt("Introduzca dia: "));
-    this.mes=Número(prompt("Introduzca mes: "));
-    this.año=Numero(prompt("Introduzca año: "));
+
+do {
+    dia=Number(prompt("Introduzca dia: "));
+    mes=Number(prompt("Introduzca mes: "));
+    year=Number(prompt("Introduzca año: "));
+    
+}while (validar){
+    if ((dia>=1 && dia<=31) || (mes<=12 && mes>=0) ||(year>0)){
+        console.log(`la fecha es: ${dia} el mes es: ${mes[mes]}y el año es: ${year}`)
     
 }
-if ((dia>=1 && dia<=31) && (mes<=12 && mes>=0) &&(año>0));
-
-if ((día <= 0) && (día > 31) && (mes <= 0) && (mes > 12) && (año < 0)) {
+if ((día <= 0) && (día > 31) && (mes <= 0) && (mes > 12) && (year < 0)) {
     console.log("La fecha es inválida.")}
 
 if  ( mes  === 2  &&  año  %  4  ===  0 ){
-mes [ m ]  =  29;
+mes [ mes ]  =  29;
 console.log("el mes es bisiesto")
+
+
 }
-console.log(`la fecha es: ${dia} el mes es: ${mes[mes]}y el año es: ${año}`);
+}

@@ -10,6 +10,7 @@
 
 consola.clear( ) ;
 const  prompt=require ("prompt-sync")() ;
+
 let MAX=4;
 
 let  lado  =  prompt ("Introduzca tamaño del lado del cuadrado: ") ;

@@ -10,9 +10,11 @@ console.log();
 const  prompt=require ("prompt-sync")() ;
 
 let number=0;
+let poten=0;
+
 
 let MAX=10;
 
-for  ( let  i = 0 ;  i < MAX ;  i ++ ) {
-  number=number ( prompt ( "Introduzca el número " +  ( i + 1 )  +  "º: " ) ) ;
+for  ( let  i = 0 ;  i <=MAX ;  i ++ ) {
+poten=number ( prompt ( "Introduzca el número " +  ( i + 1 )  +  "º: " ) ) ;
     consola.log( "El cubo de" +  number  + "es" +  ( number ** 3 ) )}
